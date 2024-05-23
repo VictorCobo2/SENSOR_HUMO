@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "f3d53eb3-b7b8-4b43-8ff4-e4eab0ccb109",
+		"name": "SENSORES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18202735",
+		"_collection_link": "https://pruebamisiontic.postman.co/workspace/My-Workspace~db33cd88-30cb-4688-8a97-4da1b9cd3ea6/collection/18202735-f3d53eb3-b7b8-4b43-8ff4-e4eab0ccb109?action=share&creator=18202735&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Traer sensores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/sensores",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sensores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"64b803f088649089cea9c717\",\r\n    \"nombre\": \"Sensor 1\",\r\n    \"ubicacion\": \"SIN\",\r\n    \"__v\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sensores",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sensores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sensort",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
