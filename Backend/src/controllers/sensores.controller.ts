@@ -3,9 +3,8 @@ import { HTML_ALERT } from "../helpers/html";
 import twilio from "twilio";
 import nodemailer from "nodemailer";
 
-const accountSid = "Tu account ID de Twilio";
-// To3Ts8jyUHRC-Ti314m8whWDGWTIm2tYU9YZuqQL
-const authToken = "Tu Token de twilio";
+const accountSid = "account ID";
+const authToken = "Token";
 
 export const enviarAlertas = async (req: Request, res: Response) => {
   try {
